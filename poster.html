@@ -9,19 +9,19 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --ink: #111d3b;
-      --blue: #1256cc;
-      --electric: #55a8ff;
-      --signal: #ffd126;
-      --paper: #f4f1e8;
-      --muted: #5d687d;
-      --line: rgba(17, 29, 59, 0.14);
+      --ink: #17324d;
+      --blue: #2d6476;
+      --electric: #91b0bc;
+      --signal: #b58a4a;
+      --paper: #f7f6f1;
+      --muted: #647585;
+      --line: rgba(23, 50, 77, 0.14);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html, body {
       min-height: 100%;
-      background: #0b1226;
+      background: #10283c;
       color: var(--ink);
       font-family: "Space Grotesk", sans-serif;
     }
@@ -47,8 +47,8 @@
       inset: 0;
       opacity: 0.32;
       background-image:
-        linear-gradient(rgba(85, 168, 255, 0.24) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(85, 168, 255, 0.24) 1px, transparent 1px);
+        linear-gradient(rgba(145, 176, 188, 0.22) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(145, 176, 188, 0.22) 1px, transparent 1px);
       background-size: 36px 36px;
       mask-image: linear-gradient(90deg, black 0%, transparent 86%);
     }
@@ -60,7 +60,7 @@
       color: transparent;
       font: 700 188px/1 "Space Grotesk", sans-serif;
       letter-spacing: -0.12em;
-      -webkit-text-stroke: 1px rgba(85, 168, 255, 0.2);
+      -webkit-text-stroke: 1px rgba(145, 176, 188, 0.22);
     }
     .wire {
       position: absolute;
@@ -68,7 +68,7 @@
       height: 270px;
       right: 58px;
       top: 26px;
-      border: 1px solid rgba(85, 168, 255, 0.36);
+      border: 1px solid rgba(145, 176, 188, 0.38);
       border-radius: 50%;
     }
     .wire::before, .wire::after {
@@ -78,11 +78,11 @@
     }
     .wire::before {
       width: 13px; height: 13px; top: 26px; left: 16px;
-      background: var(--signal); box-shadow: 0 0 0 7px rgba(255, 209, 38, 0.12);
+      background: var(--signal); box-shadow: 0 0 0 7px rgba(181, 138, 74, 0.14);
     }
     .wire::after {
       width: 11px; height: 11px; bottom: 32px; right: 8px;
-      background: var(--electric); box-shadow: 0 0 0 6px rgba(85, 168, 255, 0.12);
+      background: var(--electric); box-shadow: 0 0 0 6px rgba(145, 176, 188, 0.14);
     }
     .hero-content { position: relative; z-index: 1; max-width: 575px; }
     .eyebrow {
@@ -104,8 +104,8 @@
     }
     .status {
       display: inline-flex; align-items: center; gap: 8px; margin-top: 24px;
-      border: 1px solid rgba(255, 209, 38, 0.42); border-radius: 2px;
-      padding: 7px 10px; color: #fff7ce; background: rgba(255, 209, 38, 0.08);
+      border: 1px solid rgba(181, 138, 74, 0.55); border-radius: 2px;
+      padding: 7px 10px; color: #f4e8cf; background: rgba(181, 138, 74, 0.12);
       font: 500 10px/1 "DM Mono", monospace; letter-spacing: 0.09em; text-transform: uppercase;
     }
     .status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--signal); }
@@ -171,9 +171,9 @@
     .work-list { display: grid; gap: 17px; }
 
     .applications { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 17px; }
-    .applications > div { padding: 18px; background: #e5ecf6; }
+    .applications > div { padding: 18px; background: #e7eeec; }
     .applications h3 { color: var(--ink); font-size: 13px; margin-bottom: 9px; }
-    .applications p { color: #43516c; font-size: 11px; line-height: 1.6; }
+    .applications p { color: #465d69; font-size: 11px; line-height: 1.6; }
     .award { background: var(--blue) !important; }
     .award h3, .award p { color: white; }
     .award p { color: rgba(255, 255, 255, 0.79); }
@@ -184,12 +184,12 @@
     }
     .footer::after {
       content: ""; position: absolute; width: 240px; height: 240px; right: -82px; top: -90px;
-      border: 1px solid rgba(85, 168, 255, 0.3); border-radius: 50%;
+      border: 1px solid rgba(145, 176, 188, 0.34); border-radius: 50%;
     }
     .footer-copy, .contact { position: relative; z-index: 1; }
     .footer-label { color: var(--signal); font: 500 10px/1 "DM Mono", monospace; letter-spacing: 0.13em; text-transform: uppercase; }
     .footer h2 { margin-top: 8px; font: 400 20px/1.25 "Libre Baskerville", serif; }
-    .contact { display: grid; gap: 7px; text-align: right; color: #d7e7ff; font: 10px/1.3 "DM Mono", monospace; }
+    .contact { display: grid; gap: 7px; text-align: right; color: #d9e5e2; font: 10px/1.3 "DM Mono", monospace; }
     .contact a { color: inherit; text-decoration: none; }
 
     .controls { position: fixed; right: 22px; bottom: 22px; z-index: 5; }
